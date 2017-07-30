@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row" id="pageHeader" style="background-color:#F6F8F8;color:#646565;font-size:18px;">
     <div class="col-md-2 pad-10">
-      Hostel
+      Reports
     </div>
     <div class="col-md-10 right">
       <ul id="moduleSubMenu" class="customScroll">

@@ -32,8 +32,8 @@
 </div>
 <div style="height:60px"></div>
 <!-- Scrollers -->
-<div id="scrollToBottom" onclick="window.scrollTo(0,document.body.scrollHeight);"><i class="fa fa-fw fa-angle-down pullRight" style="font-size:18px;"></i></div>
-<div id="scrollToTop" onclick="window.scrollTo(0,0);"><i class="fa fa-fw fa-angle-up pullRight" style="font-size:18px;"></i></div>
+<div id="scrollToBottom" onclick="window.scrollTo(0,document.body.scrollHeight);" style="background-color:rgba(0,0,0,0.5);color:white;"><i class="fa fa-fw fa-angle-down pullRight" style="font-size:18px;"></i></div>
+<div id="scrollToTop" onclick="window.scrollTo(0,0);" style="background-color:rgba(0,0,0,0.5);color:white;"><i class="fa fa-fw fa-angle-up pullRight" style="font-size:18px;"></i></div>
 <script>
   //Scroll Detector
   window.onscroll = function() {myFunction()};

@@ -153,7 +153,7 @@ app.controller('SideBarController', function ($rootScope,$scope, $timeout, $mdSi
 
   $scope.academicsSubmenu = [{'icon':'','controller':'ApplicantRegistrationController','link':'applicantRegistration.php','title':'Applicant Registration'},{'icon':'','controller':'AttendanceController','link':'attendance.php','title':'Attendence'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Batch Summary'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Calender'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Discipline'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Examination'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Leaves'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Library'},{'icon':'','controller':'HomeController','link':'cs.php','title':'My Profile'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Placement'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Remarks'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Student Records'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Students'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Timetable'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Transfer Certificate'}];
 
-  $scope.dataReportsSubmenu = [{'icon':'','controller':'ReportsController','link':'reports.php','title':'Reports'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Custom Imports'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Custom Reports'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Data Exports'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Data Management'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Audit'}];
+  $scope.dataReportsSubmenu = [{'icon':'','controller':'ReportsController','link':'reports.php','title':'Reports'},{'icon':'','controller':'CustomImportsController','link':'customImports.php','title':'Custom Imports'},{'icon':'','controller':'CustomReportsController','link':'customReports.php','title':'Custom Reports'},{'icon':'','controller':'HomeController','link':'dataExports.php','title':'Data Exports'},{'icon':'','controller':'AuditController','link':'audit.php','title':'Audit'}];
 
   $scope.UtilitySubmenu = [{'icon':'','controller':'HomeController','link':'cs.php','title':'Alumni'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Blog'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Collaborate'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Discussion'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Documents'},{'icon':'','controller':'HomeController','link':'cs.php','title':'E-mail'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Event Creation'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Forms'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Gallery'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Google Docs'},{'icon':'','controller':'HomeController','link':'cs.php','title':'News'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Poll'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Tasks'}];
 
@@ -202,7 +202,7 @@ app.controller('ModuleController', function ($rootScope, $scope, $timeout) {
 
   $scope.academicsCards = [{'icon':'','controller':'HomeController','link':'applicantRegistration.php','title':'Applicant Registration'},{'icon':'','controller':'AttendanceController','link':'attendance.php','title':'Attendence'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Batch Summary'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Calender'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Discipline'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Examination'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Leaves'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Library'},{'icon':'','controller':'HomeController','link':'cs.php','title':'My Profile'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Placement'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Remarks'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Student Records'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Students'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Timetable'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Transfer Certificate'}];
 
-  $scope.dataReportsCards = [{'icon':'','controller':'ReportController','link':'reports.php','title':'Reports'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Custom Imports'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Custom Reports'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Data Exports'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Data Management'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Audit'}];
+  $scope.dataReportsCards = [{'icon':'','controller':'ReportController','link':'reports.php','title':'Reports'},{'icon':'','controller':'CustomImportsController','link':'customImports.php','title':'Custom Imports'},{'icon':'','controller':'CustomReportsController','link':'customReports.php','title':'Custom Reports'},{'icon':'','controller':'HomeController','link':'dataExports.php','title':'Data Exports'},{'icon':'','controller':'AuditController','link':'audit.php','title':'Audit'}];
 
   $scope.utilityCards = [{'icon':'','controller':'HomeController','link':'cs.php','title':'Alumni'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Blog'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Collaborate'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Discussion'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Documents'},{'icon':'','controller':'HomeController','link':'cs.php','title':'E-mail'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Event Creation'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Forms'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Gallery'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Google Docs'},{'icon':'','controller':'HomeController','link':'cs.php','title':'News'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Poll'},{'icon':'','controller':'HomeController','link':'cs.php','title':'Tasks'}];
 
@@ -383,7 +383,7 @@ app.controller('ReportsController', function ($rootScope,$scope,$timeout) {
 })
 
 app.controller('ApplicantRegistrationController', function ($rootScope, $scope, $timeout) {
-  console.log('loading registration controller');
+  console.log('loading ApplicantRegistrationController');
 })
 
 app.controller('AttendanceController', function ($rootScope,$scope,$timeout) {
@@ -435,4 +435,47 @@ app.controller('AttendanceController', function ($rootScope,$scope,$timeout) {
                           {"studentName":"vishwak","batch":"1","month":"June","year":"2017","noOfLeaves":"3"},
                           {"studentName":"lakshminarayana","batch":"1","month":"June","year":"2017","noOfLeaves":"5"}
                         ];
+})
+
+app.controller('CustomImportsController', function ($rootScope, $scope, $timeout) {
+  console.log('loading CustomImportsController');
+  $scope.customImportList = [{'name':'Student Admission','model':'Student Admission'}];
+})
+
+app.controller('CustomReportsController', function ($rootScope, $scope, $timeout) {
+  console.log('loading CustomReportsController');
+  $scope.customReportList = [{'name':'Students with AB- blood group'},{'name':'Students with A- blood group'}];
+})
+
+app.controller('AuditController', function ($rootScope,$scope,$timeout) {
+
+  $scope.moduleSubMenu = [{"title":"Activity Audit","tag":"View Activities","link":"acau"},{"title":"User Audit","tag":"View Userwise Activities","link":"usau"},{"title":"Data Audit","tag":"View Data Activities","link":"daau"}];
+
+  if (window.localStorage['activeUser'] == null || window.localStorage['activeUser'] == undefined || window.localStorage['activeUser']== ""){
+      window.location.href = "login.php";
+    } else {
+      $rootScope.activeUser = JSON.parse(window.localStorage['activeUser']);
+      console.log('activeUser',$rootScope.activeUser);
+  }
+
+  $scope.setActiveAuditView = function (view) {
+    $scope.activeAuditView = view;
+    console.log('activeAuditView',view);
+    window.localStorage['activeAuditView'] = view;
+  }
+
+  if (window.localStorage['activeAuditView'] == null || window.localStorage['activeAuditView'] == undefined || window.localStorage['activeAuditView']== ""){
+    $scope.setActiveAuditView('none');
+  } else {
+    $scope.setActiveAuditView(window.localStorage['activeReportsView']);
+  }
+
+  $scope.activityAuditDetails = [{'activity':'login','module':'user','visits':'1'},{'activity':'logout','module':'user','visits':'1'}];
+  $scope.userAuditDetails = [{'activity':'login','name':'admin','visits':'2','lastActive':'Yesterday'},{'activity':'logout','name':'admin','visits':'2','lastActive':'Today'}];
+
+
+})
+
+app.controller('BatchSummaryController', function ($rootScope,$scope,$timeout) {
+  
 })
