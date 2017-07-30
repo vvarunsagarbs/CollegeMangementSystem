@@ -12,7 +12,7 @@
   <div id="BreadCrumb" data-ng-controller="ModuleController">
     <ul>
       <a href="index.php"><li style="display:inline">Home</li></a> >
-      <a href="modules.php" data-ng-click="setActiveModulePage('ad')"><li style="display:inline">Academics</li></a> >
+      <a href="modules.php" data-ng-click="setActiveModulePage('ac')"><li style="display:inline">Academics</li></a> >
       <a ng-click="setActiveAttendanceView('none')"><li style="display:inline">Attendance</li></a> >
       <a><li style="display:inline">Attendance Register</li></a> >
     </ul>

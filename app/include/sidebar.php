@@ -1,5 +1,5 @@
 <div data-ng-controller="SideBarController" data-ng-controller="ModuleController">
-  <p id="sideNavTitle">Navigation</p>
+  <p id="sideNavTitle" style="color:#1C2B36;">Navigation</p>
   <a href="index.php"><div id="sideNavContent" data-ng-click="setActiveSubNavView('none')">
     Dashboard
   </div></a>

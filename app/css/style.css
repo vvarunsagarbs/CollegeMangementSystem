@@ -215,3 +215,14 @@ ul#moduleSubMenu li:hover{
   background-color: #23B7E5;
   color: #ffffff;
 }
+
+
+/*Profile*/
+#profileInfo {
+  text-align: left;
+}
+#profileInfo div{
+  padding:5px;
+  font-family: verdana;
+  border:1px solid #ECECEC;
+}
