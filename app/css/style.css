@@ -10,8 +10,17 @@
 .setWhite {
   background-color: #FFFFFF;
 }
-/*Typography*/
 
+/*Angular Form*/
+md-input-container label {
+  color:#4DB6AC;
+}
+
+md-input-container .md-input {
+  border-color:#4DB6AC;
+}
+
+/*Typography*/
 p,h1,h2,h3,h4,h5,h6,a {
   font-family: verdana;
 }

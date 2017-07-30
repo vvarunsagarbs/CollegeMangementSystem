@@ -5,20 +5,19 @@
     </div>
     <div class="col-md-10">
       <ul id="moduleSubMenu" class="customScroll">
-        <a ng-repeat="menu in moduleSubMenu" ng-click="setActiveSettingsView(menu.link)"><li>{{menu.title}}</li></a>
+        <a ng-repeat="menu in modulesMenu" ng-click="setActiveModulePage(menu.link)"><li>{{menu.title}}</li></a>
       </ul>
     </div>
   </div>
   <div id="BreadCrumb">
     <ul>
       <a href="index.php"><li style="display:inline">Home</li></a> >
-      <a ng-click="setActiveSettingsView('none')"><li style="display:inline">Administration</li></a> >
-      <a ng-click="setActiveSettingsView('none')"><li style="display:inline">Settings</li></a>
+      <a ng-click="setActiveModulePage('none')"><li style="display:inline">Modules</li></a>
     </ul>
   </div>
   <div id="pageBackground" class="row center pad-20">
-    <div class="col-md-4 pad-10" ng-repeat="card in moduleSubMenu" style="height:120px;">
-      <div class="dashCard" id="card.title" ng-click="setActiveSettingsView(card.link)">
+    <div class="col-md-4 pad-10" ng-repeat="card in modulesMenu" style="height:120px;">
+      <div class="dashCard" id="card.title" ng-click="setActiveModulePage(card.link)">
         <div>
             <span><b>{{card.title}}</b></span>
           <hr>
